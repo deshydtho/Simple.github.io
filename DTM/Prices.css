@@ -1,0 +1,14 @@
+#footer{
+    text-align: center;
+    background-color: black;
+    color: white
+}
+
+body{
+    background-color: black
+}
+
+#check{
+    margin-left: 700px;
+    margin-top: 10px
+}

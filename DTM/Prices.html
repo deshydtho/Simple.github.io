@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DTM</title>
+    <link rel="shortcut icon" href="logo.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="Prices.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="DTM.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Desh Tech Money</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="DTM.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Specs.html">Inventory</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Prices.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <input type="image" id="check" name="submit"
+              src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif"
+              alt="Add to Cart">
+              <img alt="" width="1" height="1"
+              src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+              </form>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Phone/Car/House</th>
+            <th scope="col">In/Out of Stock</th>
+            <th scope="col">Price (USD)</th>
+            <th scope="col">Checkout</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+                <td>Phone</td>
+                <td>In Stock</td>
+                <td>320.99$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form></td>
+         </tr>
+         <tr>
+            <th scope="row">2</th>
+                <td>Phone</td>
+                <td>In Stock</td>
+                <td>149.57$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form></td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+                <td>Phone</td>
+                <td>Out of Stock</td>
+                <td>234.54$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form></td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+                <td>Phone</td>
+                <td>In Stock</td>
+                <td>220.99$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form></td>
+        </tr>
+        <tr>
+            <th scope="row">5</th>
+                <td>Phone</td>
+                <td>In Stock</td>
+                <td>349.57$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form></td>
+        </tr>
+        <tr>
+            <th scope="row">6</th>
+                <td>Phone</td>
+                <td>Out of Stock</td>
+                <td>134.54$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form></td>
+        </tr>
+        <tr>
+            <th scope="row">7</th>
+                <td>Phone</td>
+                <td>In Stock</td>
+                <td>220.29$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form></td>
+        </tr>
+        <tr>
+            <th scope="row">8</th>
+                <td>Phone</td>
+                <td>In Stock</td>
+                <td>179.57$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form></td>
+        </tr>
+        <tr>
+            <th scope="row">9</th>
+                <td>Phone</td>
+                <td>Out of Stock</td>
+                <td>294.56$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form></td>
+        </tr>
+        <tr>
+            <th scope="row">10</th>
+                <td>Car</td>
+                <td>In Stock</td>
+                <td>32099.35$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form></td>
+        </tr>
+        <tr>
+            <th scope="row">11</th>
+                <td>Car</td>
+                <td>In Stock</td>
+                <td>14957.85$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form></td>
+        </tr>
+        <tr>
+            <th scope="row">12</th>
+                <td>Car</td>
+                <td>In Stock</td>
+                <td>23454.21$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form></td>
+        </tr>
+        <tr>
+            <th scope="row">13</th>
+                <td>Car</td>
+                <td>Out of Stock</td>
+                <td>22099.69$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form></td>
+        </tr>
+        <tr>
+            <th scope="row">14</th>
+                <td>Car</td>
+                <td>In Stock</td>
+                <td>34957.90$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form></td>
+        </tr>        
+        <tr>
+            <th scope="row">15</th>
+                <td>Car</td>
+                <td>In Stock</td>
+                <td>13454.55$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form></td>
+        </tr>
+        <tr>
+            <th scope="row">16</th>
+                <td>Car</td>
+                <td>In Stock</td>
+                <td>22029.86$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form></td>
+        </tr>
+        <tr>
+            <th scope="row">17</th>
+                <td>Car</td>
+                <td>In Stock</td>
+                <td>17957.99$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form></td>
+        </tr>
+        <tr>
+            <th scope="row">18</th>
+                <td>Car</td>
+                <td>In Stock</td>
+                <td>23494.43$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form></td>
+        </tr>
+        <tr>
+            <th scope="row">19</th>
+                <td>House</td>
+                <td>In Stock</td>
+                <td>333,000.00$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form></td>
+        </tr>
+        <tr>
+            <th scope="row">20</th>
+                <td>House</td>
+                <td>In Stock</td>
+                <td>353,354.00$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form></td>
+        </tr>
+        <tr>
+            <th scope="row">21</th>
+                <td>House</td>
+                <td>Out of Stock</td>
+                <td>533,043.00$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form></td>
+        </tr>
+        <tr>
+            <th scope="row">22</th>
+                <td>House</td>
+                <td>Out of Stock</td>
+                <td>240,405.34$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form></td>
+        </tr>
+        <tr>
+            <th scope="row">23</th>
+                <td>House</td>
+                <td>In Stock</td>
+                <td>130,304.45$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form></td>
+        </tr>
+        <tr>
+            <th scope="row">24</th>
+                <td>House</td>
+                <td>In Stock</td>
+                <td>435,949.69$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form></td>
+        </tr>
+        <tr>
+            <th scope="row">25</th>
+                <td>House</td>
+                <td>In Stock</td>
+                <td>583,684.33$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form></td>
+        </tr>
+        <tr>
+            <th scope="row">26</th>
+                <td>House</td>
+                <td>Out of Stock</td>
+                <td>204,469.59$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form></td>
+        </tr>
+        <tr>
+            <th scope="row">27</th>
+                <td>House</td>
+                <td>In Stock</td>
+                <td>134,694.69$</td>
+                <td> <input type="image" name="submit"
+                  onclick=getContinueShoppingURL(this.form)
+                  src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                  alt="Add to Cart"/>
+                  <img alt="" width="1" height="1"
+                  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                 </form>
+        </tbody>
+      </table>
+      <div id="footer">
+        <h2 class="display-3">About Us</h2>
+        <p id='p3'class="lead">Started in St.Louis, Missouri, Deshawn Sutton had the idea to create a business with no complicated designs, just intricate and innovative concepts. After that Deshawn created his own business along with his own website. He now lives in Madagascar with his parents. </p>
+        <hr class="my-4">
+        <p id='p4'>Copyright 2018 Simple., Inc. All Rights Reserved </p>
+        <p class="lead"></p>
+        <p>Email: monkamonka6@gmail.com Phone: 314-308-0761</p>
+      </div>
+      </body>
+  </html>

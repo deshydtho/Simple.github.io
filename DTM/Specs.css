@@ -1,0 +1,36 @@
+#title{
+    margin-top: 50px;
+    text-align: center;
+    text-decoration-line: overline
+}
+
+#titles2{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 22px;
+    text-decoration-line: overline
+}
+
+body{
+    background-color: black;
+    color: white
+}
+
+button{
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 6px
+}
+
+img{
+    height: 200px;
+    width: 350px
+}
+
+#footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: 50px;
+}
